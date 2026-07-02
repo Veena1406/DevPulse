@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPulse Dashboard</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="/dashboard">
+                🚀 DevPulse
+            </a>
+
+            <a href="/logout" class="btn btn-danger">
+                Logout
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Dashboard -->
+    <div class="container mt-5">
+
+        <div class="card shadow">
+
+            <div class="card-body text-center">
+
+                <h2 class="mb-3">
+                    Welcome {{ username }}
+                </h2>
+
+                <p class="text-muted">
+                    Collaborative Real-Time Markdown Editor & Team Wiki
+                </p>
+
+                <hr>
+
+                <div class="d-grid gap-3 col-md-6 mx-auto">
+
+                    <a href="/new" class="btn btn-success btn-lg">
+                        ➕ Create New Document
+                    </a>
+
+                    <a href="/documents" class="btn btn-primary btn-lg">
+                        📄 My Documents
+                    </a>
+
+                    <a href="/profile" class="btn btn-info btn-lg">
+                        👤 My Profile
+                    </a>
+
+                    <a href="/logout" class="btn btn-danger btn-lg">
+                        🚪 Logout
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

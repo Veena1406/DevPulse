@@ -1,0 +1,9 @@
+Flask
+Flask-PyMongo
+Flask-SocketIO
+python-dotenv
+pymongo
+eventlet
+Werkzeug
+bcrypt
+markdown

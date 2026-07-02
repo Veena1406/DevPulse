@@ -2,29 +2,28 @@
 
 ## Collaborative Real-Time Markdown Editor & Team Wiki
 
-DevPulse is a web-based Markdown Editor developed using **Python Flask** and **MongoDB**. It allows users to securely create, edit, preview, search, and manage markdown documents through a clean and responsive interface.
-
-This project was developed as an internship project to demonstrate full-stack web development using Flask, MongoDB, Bootstrap, and Python.
+DevPulse is a web-based collaborative markdown editor that allows users to create, edit, organize, and manage markdown documents. It is developed using Flask and MongoDB with a simple and responsive user interface.
 
 ---
 
 ## 📌 Features
 
-- 🔐 User Registration & Login
-- 🔒 Secure Password Encryption (bcrypt)
-- 👤 User Profile
-- 📝 Create Markdown Documents
-- ✏️ Edit Documents
-- 👀 Live Markdown Preview
-- 📂 View All Documents
-- 🔍 Search Documents
-- 🗑️ Delete Documents
-- 📱 Responsive Bootstrap UI
-- 🔑 Session-Based Authentication
+- User Registration
+- User Login & Logout
+- Secure Password Hashing
+- User Dashboard
+- User Profile
+- Create Markdown Documents
+- Edit Existing Documents
+- Delete Documents
+- Search Documents
+- Live Markdown Preview
+- User-wise Document Storage
+- Responsive Bootstrap Interface
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
 ### Frontend
 - HTML5
@@ -40,16 +39,14 @@ This project was developed as an internship project to demonstrate full-stack we
 - MongoDB
 
 ### Libraries
-- Flask
 - Flask-PyMongo
 - PyMongo
 - bcrypt
 - markdown
-- python-dotenv
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 DevPulse/
@@ -57,7 +54,6 @@ DevPulse/
 ├── app.py
 ├── config.py
 ├── requirements.txt
-├── .env
 │
 ├── database/
 │   └── mongodb.py
@@ -74,14 +70,12 @@ DevPulse/
 │   ├── login.html
 │   ├── register.html
 │   ├── dashboard.html
-│   ├── profile.html
 │   ├── documents.html
 │   ├── editor.html
-│   └── view_document.html
+│   └── profile.html
 │
 ├── static/
-│   ├── css/
-│   └── js/
+│   └── style.css
 │
 └── utils/
     └── password.py
@@ -89,47 +83,27 @@ DevPulse/
 
 ---
 
-## ⚙️ Installation
+## ⚙ Installation
 
-### Clone the Repository
+Clone the project.
 
-```bash
-git clone https://github.com/yourusername/devpulse.git
+```
+git clone <repository-url>
 ```
 
-Move into the project folder.
+Install the dependencies.
 
-```bash
-cd devpulse
 ```
-
-Create a virtual environment.
-
-```bash
-python -m venv venv
-```
-
-Activate the virtual environment.
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### Install Dependencies
-
-```bash
 pip install -r requirements.txt
 ```
 
-Run the application.
+Run the Flask application.
 
-```bash
+```
 python app.py
 ```
 
-Open your browser.
+Open your browser and visit:
 
 ```
 http://127.0.0.1:5000
@@ -137,101 +111,51 @@ http://127.0.0.1:5000
 
 ---
 
-## 📖 Usage
+## 📷 Modules
 
-1. Register a new account.
-2. Login using your credentials.
-3. Open the Dashboard.
-4. Create a new markdown document.
-5. Write markdown content.
-6. View the live preview.
-7. Save the document.
-8. Edit or delete documents anytime.
-9. Search documents by title.
-10. Logout securely.
-
----
-
-## 📷 Screenshots
-
-Add screenshots of the following pages.
-
-- Home Page
-- Registration
+### Authentication
+- Register
 - Login
-- Dashboard
-- User Profile
-- My Documents
-- Markdown Editor
+- Logout
+
+### Dashboard
+- User Home Page
+
+### Document Management
+- Create
+- Edit
+- Delete
+- Search
 - Live Preview
-- Search Documents
-- MongoDB Collections
 
----
-
-## 🔒 Security Features
-
-- Password Hashing using bcrypt
-- Secure User Authentication
-- Session Management
-- User-Specific Document Access
-- Protected Routes
+### User Profile
+- View User Details
 
 ---
 
 ## 📈 Future Enhancements
 
-- Real-Time Collaboration
+- Real-time collaboration using Socket.IO
+- Team Workspaces
+- Comments on Documents
 - Version History
-- PDF Export
+- Export to PDF
 - Dark Mode
 - Document Sharing
-- Comments
-- Notifications
-- Rich Text Editor
-- Cloud Deployment
-- AI Writing Assistant
+- Email Notifications
 
 ---
 
-## 🎯 Learning Outcomes
+## 🎯 Conclusion
 
-Through this project, the following concepts were implemented:
-
-- Flask Routing
-- MongoDB Integration
-- CRUD Operations
-- Session Management
-- Password Encryption
-- Bootstrap UI Design
-- Markdown Rendering
-- Project Structure Organization
-- User Authentication
+DevPulse provides a simple and efficient platform for creating and managing markdown documents. It demonstrates authentication, CRUD operations, MongoDB integration, and responsive web design using Flask.
 
 ---
 
-## 👩‍💻 Developer
+## 👩‍💻 Developed By
 
 **Veena Munige**
 
-Department of Computer Science and Engineering
+Bachelor of Engineering
 
-University College of Engineering and Technology for Women
-
-Kakatiya University
-
----
-
-## 🏢 Internship Details
-
-**Company:** EduExpose
-
-**Industry Mentor:** Santhoshi
-
-**Duration:** May 1 – June 30
-
----
-
-## 📄 License
-
-This project was developed for educational and internship purposes.
+Department of Computer Science
